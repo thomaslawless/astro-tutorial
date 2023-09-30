@@ -1,5 +1,6 @@
 ---
-
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <html lang="en">
@@ -11,9 +12,11 @@
 		<title>Astro</title>
 	</head>
 	<body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+       <Header />
 		<h1>Test</h1>
+		<Footer />
+		<script>
+			import "../scripts/menu.js";
+		</script>
 	</body>
 </html>
